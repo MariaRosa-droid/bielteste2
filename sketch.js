@@ -667,7 +667,7 @@ princessHappy.collide(portal1);
 princessHappy.collide(portal2);
 princessHappy.collide(ground);
 
-if(mousePressedOver(play)) {
+if(touches.length>0 || mousePressedOver(play)) {
   jason.visible = true;
   ground.visible = true;
   tower.visible = true;
@@ -679,6 +679,7 @@ if(mousePressedOver(play)) {
   //bg_sound.play();
   player1V0.destroy();
   player2V0.destroy();
+  touches= [];
 }
 if(gameState==="serve") {
  
