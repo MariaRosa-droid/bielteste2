@@ -97,7 +97,7 @@ function preload(){
 }
 
 function setup() {
- createCanvas(displayWidth,displayHeight);
+ createCanvas(displayWidth+80,displayHeight);
  engine = Engine.create();
  world = engine.world;
 
@@ -320,7 +320,7 @@ function setup() {
 
 
 function draw() {
-   background(bg_Img);
+   background(bg_Img,0,0,displayWidth+80,displayHeight);
  
    Engine.update(engine);
 
