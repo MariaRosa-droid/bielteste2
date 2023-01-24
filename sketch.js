@@ -166,10 +166,7 @@ function setup() {
   love.scale = 0.2;
   love.visible = false;
 
-  jasonXmonster = createSprite(width/2,height/2);
-  jasonXmonster.addImage(paper);
-  jasonXmonster.visible = true;
-  jasonXmonster.scale = 1.7
+  
 
   victory = createSprite(762,350);
   victory.addImage(victoryImg);
