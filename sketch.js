@@ -317,9 +317,12 @@ function setup() {
 
 
 function draw() {
-   background(bg_Img,0,0,displayWidth+80,displayHeight);
+   background(51);
+
+   image(bg_Img,0,0,displayWidth,displayHeight);
  
-   Engine.update(engine);
+   
+   imageMode(CENTER);
 
   if(gameState==="save") {
     
